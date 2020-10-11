@@ -44,8 +44,8 @@ class ViewController: UIViewController {
                                      height: self.view.frame.height - topSpacingForView)
         
     // Create the expandableCollapsable view with custom views
-    let expandableCollapsableView = ExpandableCollapsableView(cardViews: customCards,
-                                                              frame: expandableViewFrame)
+    guard let expandableCollapsableView = ExpandableCollapsableView(cardViews: customCards,
+                                                                    frame: expandableViewFrame) else { return }
     
     // Set the delegate of custom views as expandableCollapsableView
     firstView.delegate = expandableCollapsableView

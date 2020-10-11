@@ -19,9 +19,12 @@ class ExpandableCollapsableView: UIView {
   var spaceBetweenCards: CGFloat = 110.0
   var cardTopConstraints = [NSLayoutConstraint]()
   
-  init(cardViews: [ExpandableCollapsableCard],
+  init?(cardViews: [ExpandableCollapsableCard],
        frame: CGRect) {
-    
+    if cardViews.count < 2 {
+      print("Error, expandable collapsable view requires a minimum of 2 views")
+      return nil
+    }
     self.cardViews = cardViews
     super.init(frame: frame)
         
