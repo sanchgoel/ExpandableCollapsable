@@ -5,6 +5,7 @@ This project allows you to create stackable cards with expanding collapsing anim
 Cocopods Setup to integrate Expandable Collapsable into your Xcode project using CocoaPods, specify it in your Podfile:
 
 `source 'https://github.com/sanchgoel/ExpandableCollapsablePodSpecs.git'`
+
 `pod 'ExpandableCollapsable'`
 
 ## How to use
