@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11275C682532D3700055CF96 /* ExpandableCollapsableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11275C672532D3700055CF96 /* ExpandableCollapsableCard.swift */; };
+		115F9A742532BB700008F235 /* ThirdCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118305142532B3D7006AE856 /* ThirdCardView.xib */; };
+		115F9A752532BB750008F235 /* ThirdCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118305122532B3C8006AE856 /* ThirdCardView.swift */; };
+		118305042531C36F006AE856 /* SecondCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118305032531C36F006AE856 /* SecondCardView.swift */; };
+		118305082531C6D3006AE856 /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118305072531C6D3006AE856 /* PlanCollectionViewCell.swift */; };
+		1183050C2532A4E1006AE856 /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1183050A2532A4E1006AE856 /* PlanCollectionViewCell.xib */; };
+		1183050D2532A889006AE856 /* SecondCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118305022530958D006AE856 /* SecondCardView.xib */; };
+		118305102532B2F8006AE856 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183050F2532B2F8006AE856 /* Models.swift */; };
+		11945644252F0CB300245D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11945643252F0CB300245D4E /* AppDelegate.swift */; };
+		11945648252F0CB300245D4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11945647252F0CB300245D4E /* ViewController.swift */; };
+		1194564B252F0CB300245D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11945649252F0CB300245D4E /* Main.storyboard */; };
+		1194564D252F0CB600245D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1194564C252F0CB600245D4E /* Assets.xcassets */; };
+		11945650252F0CB600245D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1194564E252F0CB600245D4E /* LaunchScreen.storyboard */; };
+		119456582530343A00245D4E /* ExpandableCollapsableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119456572530343A00245D4E /* ExpandableCollapsableView.swift */; };
+		1194565C253073F400245D4E /* FirstCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1194565B253073F400245D4E /* FirstCardView.xib */; };
+		1194565E2530740F00245D4E /* FirstCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194565D2530740F00245D4E /* FirstCardView.swift */; };
+		1194566125307C5F00245D4E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194566025307C5F00245D4E /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11275C672532D3700055CF96 /* ExpandableCollapsableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCollapsableCard.swift; sourceTree = "<group>"; };
+		118305022530958D006AE856 /* SecondCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCardView.xib; sourceTree = "<group>"; };
+		118305032531C36F006AE856 /* SecondCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCardView.swift; sourceTree = "<group>"; };
+		118305072531C6D3006AE856 /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
+		1183050A2532A4E1006AE856 /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
+		1183050F2532B2F8006AE856 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		118305122532B3C8006AE856 /* ThirdCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCardView.swift; sourceTree = "<group>"; };
+		118305142532B3D7006AE856 /* ThirdCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCardView.xib; sourceTree = "<group>"; };
+		11945640252F0CB300245D4E /* ExpandableCollapsableCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableCollapsableCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11945643252F0CB300245D4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11945647252F0CB300245D4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1194564A252F0CB300245D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1194564C252F0CB600245D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1194564F252F0CB600245D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11945651252F0CB600245D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119456572530343A00245D4E /* ExpandableCollapsableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCollapsableView.swift; sourceTree = "<group>"; };
+		1194565B253073F400245D4E /* FirstCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCardView.xib; sourceTree = "<group>"; };
+		1194565D2530740F00245D4E /* FirstCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCardView.swift; sourceTree = "<group>"; };
+		1194566025307C5F00245D4E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1194563D252F0CB300245D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1183050125309582006AE856 /* Second Card */ = {
+			isa = PBXGroup;
+			children = (
+				118305032531C36F006AE856 /* SecondCardView.swift */,
+				118305022530958D006AE856 /* SecondCardView.xib */,
+				118305072531C6D3006AE856 /* PlanCollectionViewCell.swift */,
+				1183050A2532A4E1006AE856 /* PlanCollectionViewCell.xib */,
+			);
+			path = "Second Card";
+			sourceTree = "<group>";
+		};
+		1183050E2532B2DC006AE856 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1183050F2532B2F8006AE856 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		118305112532B3A5006AE856 /* Third Card */ = {
+			isa = PBXGroup;
+			children = (
+				118305122532B3C8006AE856 /* ThirdCardView.swift */,
+				118305142532B3D7006AE856 /* ThirdCardView.xib */,
+			);
+			path = "Third Card";
+			sourceTree = "<group>";
+		};
+		11945637252F0CB300245D4E = {
+			isa = PBXGroup;
+			children = (
+				11945642252F0CB300245D4E /* ExpandableCollapsableCards */,
+				11945641252F0CB300245D4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11945641252F0CB300245D4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11945640252F0CB300245D4E /* ExpandableCollapsableCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11945642252F0CB300245D4E /* ExpandableCollapsableCards */ = {
+			isa = PBXGroup;
+			children = (
+				11945643252F0CB300245D4E /* AppDelegate.swift */,
+				11945647252F0CB300245D4E /* ViewController.swift */,
+				11945649252F0CB300245D4E /* Main.storyboard */,
+				119456572530343A00245D4E /* ExpandableCollapsableView.swift */,
+				11945659253073BA00245D4E /* CardViews */,
+				1183050E2532B2DC006AE856 /* Models */,
+				1194565F25307C4800245D4E /* Utils */,
+				1194565A253073CE00245D4E /* Support */,
+				11945651252F0CB600245D4E /* Info.plist */,
+			);
+			path = ExpandableCollapsableCards;
+			sourceTree = "<group>";
+		};
+		11945659253073BA00245D4E /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
+				11945662253090DF00245D4E /* First Card */,
+				1183050125309582006AE856 /* Second Card */,
+				118305112532B3A5006AE856 /* Third Card */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
+		1194565A253073CE00245D4E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1194564E252F0CB600245D4E /* LaunchScreen.storyboard */,
+				1194564C252F0CB600245D4E /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1194565F25307C4800245D4E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1194566025307C5F00245D4E /* Extensions.swift */,
+				11275C672532D3700055CF96 /* ExpandableCollapsableCard.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		11945662253090DF00245D4E /* First Card */ = {
+			isa = PBXGroup;
+			children = (
+				1194565D2530740F00245D4E /* FirstCardView.swift */,
+				1194565B253073F400245D4E /* FirstCardView.xib */,
+			);
+			path = "First Card";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1194563F252F0CB300245D4E /* ExpandableCollapsableCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11945654252F0CB600245D4E /* Build configuration list for PBXNativeTarget "ExpandableCollapsableCards" */;
+			buildPhases = (
+				1194563C252F0CB300245D4E /* Sources */,
+				1194563D252F0CB300245D4E /* Frameworks */,
+				1194563E252F0CB300245D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpandableCollapsableCards;
+			productName = ExpandableCollapsableCards;
+			productReference = 11945640252F0CB300245D4E /* ExpandableCollapsableCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11945638252F0CB300245D4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Sanchit Goel";
+				TargetAttributes = {
+					1194563F252F0CB300245D4E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 1194563B252F0CB300245D4E /* Build configuration list for PBXProject "ExpandableCollapsableCards" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11945637252F0CB300245D4E;
+			productRefGroup = 11945641252F0CB300245D4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1194563F252F0CB300245D4E /* ExpandableCollapsableCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1194563E252F0CB300245D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11945650252F0CB600245D4E /* LaunchScreen.storyboard in Resources */,
+				1183050C2532A4E1006AE856 /* PlanCollectionViewCell.xib in Resources */,
+				1194564D252F0CB600245D4E /* Assets.xcassets in Resources */,
+				115F9A742532BB700008F235 /* ThirdCardView.xib in Resources */,
+				1194564B252F0CB300245D4E /* Main.storyboard in Resources */,
+				1183050D2532A889006AE856 /* SecondCardView.xib in Resources */,
+				1194565C253073F400245D4E /* FirstCardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1194563C252F0CB300245D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115F9A752532BB750008F235 /* ThirdCardView.swift in Sources */,
+				118305042531C36F006AE856 /* SecondCardView.swift in Sources */,
+				1194566125307C5F00245D4E /* Extensions.swift in Sources */,
+				119456582530343A00245D4E /* ExpandableCollapsableView.swift in Sources */,
+				118305102532B2F8006AE856 /* Models.swift in Sources */,
+				11945648252F0CB300245D4E /* ViewController.swift in Sources */,
+				11275C682532D3700055CF96 /* ExpandableCollapsableCard.swift in Sources */,
+				11945644252F0CB300245D4E /* AppDelegate.swift in Sources */,
+				118305082531C6D3006AE856 /* PlanCollectionViewCell.swift in Sources */,
+				1194565E2530740F00245D4E /* FirstCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11945649252F0CB300245D4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1194564A252F0CB300245D4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1194564E252F0CB600245D4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1194564F252F0CB600245D4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11945652252F0CB600245D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11945653252F0CB600245D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11945655252F0CB600245D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XMT2EHZ7LF;
+				INFOPLIST_FILE = ExpandableCollapsableCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanch.goel.ExpandableCollapsableCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11945656252F0CB600245D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XMT2EHZ7LF;
+				INFOPLIST_FILE = ExpandableCollapsableCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanch.goel.ExpandableCollapsableCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1194563B252F0CB300245D4E /* Build configuration list for PBXProject "ExpandableCollapsableCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11945652252F0CB600245D4E /* Debug */,
+				11945653252F0CB600245D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11945654252F0CB600245D4E /* Build configuration list for PBXNativeTarget "ExpandableCollapsableCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11945655252F0CB600245D4E /* Debug */,
+				11945656252F0CB600245D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11945638252F0CB300245D4E /* Project object */;
+}
