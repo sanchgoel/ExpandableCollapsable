@@ -52,10 +52,19 @@ class SecondCardView: ExpandableCollapsableCard {
     addSubview(contentView)
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+   
+    setupUI()
+  }
+  
+  func setupUI() {
     planCollectionView.delegate = self
     planCollectionView.dataSource = self
     let nib = UINib(nibName: "PlanCollectionViewCell", bundle: nil)
     self.planCollectionView.register(nib, forCellWithReuseIdentifier: "PlanCollectionViewCell")
+    
+    borderView.round(corners: [.topLeft, .topRight],
+                     radius: 20.0,
+                     frame: self.bounds)
     
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
     self.addGestureRecognizer(tap)
@@ -89,7 +98,7 @@ class SecondCardView: ExpandableCollapsableCard {
                    options: .curveEaseInOut,
                    animations: {
                     self.expandedContentView.alpha = 0.0
-                    self.collapsedContentView.alpha = 1.0
+                    self.collapsedContentView.alpha = 0.7
                     self.layoutIfNeeded()
     }, completion: nil)
   }

@@ -109,7 +109,6 @@
 				11945643252F0CB300245D4E /* AppDelegate.swift */,
 				11945647252F0CB300245D4E /* ViewController.swift */,
 				11945649252F0CB300245D4E /* Main.storyboard */,
-				119456572530343A00245D4E /* ExpandableCollapsableView.swift */,
 				11945659253073BA00245D4E /* CardViews */,
 				1183050E2532B2DC006AE856 /* Models */,
 				1194565F25307C4800245D4E /* Utils */,
@@ -141,8 +140,9 @@
 		1194565F25307C4800245D4E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1194566025307C5F00245D4E /* Extensions.swift */,
+				119456572530343A00245D4E /* ExpandableCollapsableView.swift */,
 				11275C672532D3700055CF96 /* ExpandableCollapsableCard.swift */,
+				1194566025307C5F00245D4E /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

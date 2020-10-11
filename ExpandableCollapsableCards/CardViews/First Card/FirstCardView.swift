@@ -36,6 +36,14 @@ class FirstCardView: ExpandableCollapsableCard {
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     
+    setupUI()
+  }
+  
+  func setupUI() {
+    borderView.round(corners: [.topLeft, .topRight],
+                     radius: 20.0,
+                     frame: self.bounds)
+    
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
     self.addGestureRecognizer(tap)
   }
@@ -68,7 +76,7 @@ class FirstCardView: ExpandableCollapsableCard {
                    options: .curveEaseInOut,
                    animations: {
                     self.expandedContentView.alpha = 0.0
-                    self.collapsedContentView.alpha = 1.0
+                    self.collapsedContentView.alpha = 0.7
                     self.layoutIfNeeded()
     }, completion: nil)
   }

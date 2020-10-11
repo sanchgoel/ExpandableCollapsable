@@ -217,13 +217,22 @@
                                     <color key="textColor" red="0.23921568627450979" green="0.27843137254901962" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Jok-2L-0ia">
+                                    <rect key="frame" x="341" y="51.333333333333336" width="12" height="7.3333333333333357"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="12" id="Anu-0b-Y0D"/>
+                                        <constraint firstAttribute="width" secondItem="Jok-2L-0ia" secondAttribute="height" multiplier="8:5" id="X3G-3v-XL6"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="VGE-W7-mQ8" firstAttribute="leading" secondItem="4cK-fE-qV2" secondAttribute="leading" constant="22" id="BmM-LJ-m83"/>
                                 <constraint firstAttribute="trailing" secondItem="VGE-W7-mQ8" secondAttribute="trailing" constant="22" id="LhU-na-xcp"/>
+                                <constraint firstAttribute="trailing" secondItem="Jok-2L-0ia" secondAttribute="trailing" constant="22" id="MKf-NO-N1N"/>
                                 <constraint firstItem="Rjl-LL-zF5" firstAttribute="leading" secondItem="4cK-fE-qV2" secondAttribute="leading" constant="22" id="PKK-Za-2Ns"/>
                                 <constraint firstItem="VGE-W7-mQ8" firstAttribute="top" secondItem="4cK-fE-qV2" secondAttribute="top" constant="35" id="VCN-NO-0a5"/>
+                                <constraint firstItem="Jok-2L-0ia" firstAttribute="centerY" secondItem="4cK-fE-qV2" secondAttribute="centerY" id="Y3u-4P-n4S"/>
                                 <constraint firstAttribute="trailing" secondItem="Rjl-LL-zF5" secondAttribute="trailing" constant="22" id="b3t-xV-O8W"/>
                                 <constraint firstAttribute="height" constant="110" id="gKr-mc-XSB"/>
                                 <constraint firstItem="Rjl-LL-zF5" firstAttribute="top" secondItem="VGE-W7-mQ8" secondAttribute="bottom" constant="8" id="q6K-bA-Sbe"/>
@@ -268,4 +277,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="209.26339285714286"/>
         </view>
     </objects>
+    <resources>
+        <image name="dropdown" width="8" height="5"/>
+    </resources>
 </document>

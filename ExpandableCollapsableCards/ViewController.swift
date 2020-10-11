@@ -10,51 +10,59 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  // MARK: - Variables
+  var topSpacingForView: CGFloat = 110.0
+  
+  // MARK: - Lifecycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
     addExpandableCollapsableViews()
   }
   
   func addExpandableCollapsableViews() {
+    // Create an array of custom cards
     var customCards = [ExpandableCollapsableCard]()
     
-    let frameToSet = CGRect(x: 0,
-                            y: 120,
-                            width: self.view.frame.width,
-                            height: self.view.frame.height)
-    
-    let firstView = FirstCardView(frame: frameToSet)
-    firstView.borderView.round(corners: [.topLeft, .topRight],
-                                radius: 20.0)
-    
-    let secondView = SecondCardView(frame: frameToSet)
-    secondView.borderView.round(corners: [.topLeft, .topRight],
-                                 radius: 20.0)
-    
-    let thirdView = ThirdCardView(frame: frameToSet)
-    thirdView.borderView.round(corners: [.topLeft, .topRight],
-                               radius: 20.0)
-    
-    customCards.append(contentsOf: [firstView, secondView, thirdView])
+    // Set the frame of cards
+    let cardFrame = CGRect(x: 0,
+                       y: 0,
+                       width: self.view.frame.width,
+                       height: self.view.frame.height - topSpacingForView)
         
-    let expandableView = ExpandableCollapsableView(cardViews: customCards,
-                                                   cardCTAs: [],
-                                                   frame: frameToSet)
+    // Create different custom cards as per requirement
+    let firstView = FirstCardView(frame: cardFrame)
+    let secondView = SecondCardView(frame: cardFrame)
+    let thirdView = ThirdCardView(frame: cardFrame)
     
-    firstView.delegate = expandableView
-    secondView.delegate = expandableView
-    thirdView.delegate = expandableView
+    // Append cards to custom cards array
+    customCards.append(contentsOf: [firstView, secondView, thirdView])
     
-    self.view.addSubview(expandableView)
-    expandableView.translatesAutoresizingMaskIntoConstraints = false
+    // Set the frame for the container of views
+    let expandableViewFrame = CGRect(x: 0,
+                                     y: 110,
+                                     width: self.view.frame.width,
+                                     height: self.view.frame.height - topSpacingForView)
+        
+    // Create the expandableCollapsable view with custom views
+    let expandableCollapsableView = ExpandableCollapsableView(cardViews: customCards,
+                                                              frame: expandableViewFrame)
     
-    expandableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-    expandableView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 120).isActive = true
-    expandableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-    expandableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+    // Set the delegate of custom views as expandableCollapsableView
+    firstView.delegate = expandableCollapsableView
+    secondView.delegate = expandableCollapsableView
+    thirdView.delegate = expandableCollapsableView
+    
+    // Add the view to controller and setup constraints
+    self.view.addSubview(expandableCollapsableView)
+    expandableCollapsableView.translatesAutoresizingMaskIntoConstraints = false
+    
+    expandableCollapsableView.leadingAnchor
+      .constraint(equalTo: self.view.leadingAnchor).isActive = true
+    expandableCollapsableView.topAnchor
+      .constraint(equalTo: self.view.topAnchor, constant: topSpacingForView).isActive = true
+    expandableCollapsableView.trailingAnchor
+      .constraint(equalTo: self.view.trailingAnchor).isActive = true
+    expandableCollapsableView.bottomAnchor
+      .constraint(equalTo: self.view.bottomAnchor).isActive = true
   }
 }

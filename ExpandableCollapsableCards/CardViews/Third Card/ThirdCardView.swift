@@ -34,6 +34,14 @@ class ThirdCardView: ExpandableCollapsableCard {
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     
+    setupUI()
+  }
+  
+  func setupUI() {
+    borderView.round(corners: [.topLeft, .topRight],
+                     radius: 20.0,
+                     frame: self.bounds)
+    
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
     self.addGestureRecognizer(tap)
   }

@@ -20,7 +20,6 @@ class ExpandableCollapsableView: UIView {
   var cardTopConstraints = [NSLayoutConstraint]()
   
   init(cardViews: [ExpandableCollapsableCard],
-       cardCTAs: [String],
        frame: CGRect) {
     
     self.cardViews = cardViews
@@ -44,19 +43,26 @@ class ExpandableCollapsableView: UIView {
     setDefaultTopConstraintValues()
   }
   
+  // Setup and add a new Card view
   func addCard(view: UIView, topSpace: CGFloat) {
     self.addSubview(view)
     view.translatesAutoresizingMaskIntoConstraints = false
     
-    view.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-    view.topAnchor.constraint(equalTo: self.topAnchor, constant: topSpace).isActive = true
-    view.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-    view.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -topSpace).isActive = true
+    view.leadingAnchor
+      .constraint(equalTo: self.leadingAnchor).isActive = true
+    view.topAnchor
+      .constraint(equalTo: self.topAnchor, constant: topSpace).isActive = true
+    view.trailingAnchor
+      .constraint(equalTo: self.trailingAnchor).isActive = true
+    view.heightAnchor
+      .constraint(equalTo: self.heightAnchor, constant: -topSpace).isActive = true
   }
   
+  // Set default state i.e. the first card is expanded and rest are collapsed
   func setDefaultTopConstraintValues() {
     guard let cardView = cardViews?.first,
-      let constraints = cardView.superview?.constraints.filter({ $0.firstAttribute == .top}) else { return }
+      let constraints = cardView.superview?.constraints
+        .filter({ $0.firstAttribute == .top}) else { return }
     
     for index in 0..<constraints.count {
       if index == 0 {
@@ -81,10 +87,12 @@ class ExpandableCollapsableView: UIView {
       return
     }
     
+    // Set top constraints for expdanded cards
     for count in 0...indexOfNewCard {
       cardTopConstraints[count].constant = CGFloat(count) * spaceBetweenCards
     }
-        
+    
+    // Set top constraints for collapsed cards
     for count in (indexOfNewCard + 1)..<cardViews.count {
       cardTopConstraints[count].constant = self.frame.height
     }
@@ -101,10 +109,12 @@ class ExpandableCollapsableView: UIView {
     guard let cardViews = cardViews,
       let indexOfCard = cardViews.firstIndex(of: view) else { return }
             
+    // Set top constraints for expdanded cards
     for count in 0...indexOfCard {
       cardTopConstraints[count].constant = CGFloat(count) * spaceBetweenCards
     }
         
+    // Set top constraints for collapsed cards
     for count in (indexOfCard + 1)..<cardViews.count {
       cardTopConstraints[count].constant = self.frame.height
     }

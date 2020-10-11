@@ -10,6 +10,7 @@ import UIKit
 
 class ExpandableCollapsableCard: UIView {
 
+  // Method to reset the cards to their default state
   func resetCardState() {
     
   }
