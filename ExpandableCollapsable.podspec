@@ -7,7 +7,7 @@ s.summary = "This project allows you to create stackable cards with expanding co
 
 s.requires_arc = true
 
-s.version = "0.0.1"
+s.version = "0.0.2"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 

@@ -25,6 +25,11 @@ class ExpandableCollapsableView: UIView {
       print("Error, expandable collapsable view requires a minimum of 2 views")
       return nil
     }
+    if cardViews.count > 4 {
+      print("Error, expandable collapsable view can have a maximum of 4 views")
+      return nil
+    }
+    
     self.cardViews = cardViews
     super.init(frame: frame)
         
